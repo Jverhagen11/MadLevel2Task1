@@ -23,7 +23,9 @@ class PlaceAdapter(private val places: List<Place>) :
         val binding = ItemPlaceBinding.bind(itemView)
 
         fun databind(place: Place) {
+            //bind the image to the imageview
             binding.ivPlace.setImageResource(place.imageResId)
+            //bind the text to the textview
             binding.tvPlace.text = place.name
         }
     }
